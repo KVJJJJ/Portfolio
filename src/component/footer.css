@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,61 @@
+@keyframes slideUp {
+    from {
+        transform: translateY(50px); 
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+.herobanner {
+    animation: slideUp 1.5s ease-out; 
+    opacity: 0; 
+    animation-fill-mode: forwards; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+    height: 70vh;
+}
+.herobanner h1 {
+    font-size: 3rem;
+    color: rgb(48, 48, 48);
+    width: 60%;
+    letter-spacing: 0.5px;
+}
+.name {
+    color: rgb(84, 71, 255);
+}
+
+.herobanner h2{
+    color: rgb(48, 48, 48);
+    letter-spacing: 0.5px;
+
+}
+.scrollbutton {
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+}
+.scrollbutton a {
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+    font-size: 1rem;
+    text-decoration: none;
+    border: 3px solid rgb(84, 71, 255);
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: rgb(84, 71, 255);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.scrollbutton a:hover {
+    background-color: rgb(220, 220, 220);
+    color: rgb(84, 71, 255);
+    border-color: rgb(84, 71, 255);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}

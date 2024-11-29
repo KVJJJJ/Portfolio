@@ -1,0 +1,174 @@
+/* Base styles for the content */
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Content section with padding on the left for the navigation */
+.content {
+  margin-left: 220px; /* Space reserved for the navigation bar */
+  width: calc(100% - 240px); /* Reduces content width to accommodate the nav */
+  padding: 20px;
+}
+
+/* The navigation bar */
+.barnav {
+  position: fixed;
+  top: 120px; /* Start after the Hero section, adjust as needed */
+  left: 0;
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 120px); /* Full height minus space for header */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: top 0.3s ease;
+}
+
+.barnav h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.barnav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.barnav li {
+  margin: 15px 0;
+}
+
+.barnav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.barnav a:hover {
+  color: #21198a;
+}
+
+.barnav a:active {
+  color: #21198a;
+}
+
+/* Sticky header styles */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(228, 218, 255, 0.8);
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+/* Navigation items styling */
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  color: rgb(48, 48, 48);
+  font-size: 11px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+
+}
+
+.items a {
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+}
+
+.items a:hover {
+  color: #21198a;
+}
+
+h2 {
+  
+  padding: 0;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Media queries for responsive design */
+
+/* Larger screens */
+@media (max-width: 1200px) {
+  .barnav {
+    width: 180px; /* Slightly narrower for medium screens */
+    top: 120px;
+  }
+
+  .content {
+    margin-left: 200px;
+    width: calc(100% - 220px); /* Adjust content width */
+  }
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack the content vertically */
+    padding: 10px;
+  }
+
+  .barnav {
+    position: static; /* Remove fixed positioning for small screens */
+    width: 100%;
+    top: 0;
+    height: auto;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .content {
+    margin-left: 0; /* No need to reserve space for the nav */
+    width: 100%;
+    padding: 10px;
+  }
+
+  .barnav ul {
+    display: flex;
+    flex-direction: row; /* Arrange links horizontally */
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+
+  .barnav a {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+}
+
+/* For very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .barnav {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .barnav a {
+    font-size: 0.9rem; /* Even smaller font size for mobile */
+  }
+}
+
