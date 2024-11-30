@@ -4,7 +4,7 @@ function Header({ isHidden }) {
   return (
     <header className={isHidden ? 'hidden' : ''}>
       <div className="items">
-        <h2>Assim Senani</h2>
+      <a href="#home"><h2>Assim Senani</h2></a>
         <div className="nav-links">
           <a href="#formations"><h2>Formations</h2></a>
           <a href="#skills"><h2>Skills</h2></a>

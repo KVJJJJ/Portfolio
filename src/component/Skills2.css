@@ -1,0 +1,23 @@
+.Skills2 {
+    max-width: 800px;  
+    margin: 0 auto;  
+    padding: 20px;  
+    line-height: 1.6;  
+    font-family: 'Be Vietnam Pro', sans-serif;  
+    color: #333;  
+  }
+  
+  .Skills2 h1 {
+    font-size: 3rem;  
+    color: #5447ff;  
+    margin-bottom: 15px;  
+    text-align: center;  
+    text-shadow: 5px 5px #1b252e1e;
+  }
+  .Skills2 p {
+    font-size: 1.3rem;  
+    margin-top: 0;  
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  

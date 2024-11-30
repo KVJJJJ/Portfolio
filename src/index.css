@@ -15,3 +15,6 @@ code {
     monospace;
     scroll-behavior: smooth;
 }
+* {
+  scroll-behavior: smooth;
+}

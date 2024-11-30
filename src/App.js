@@ -1,5 +1,4 @@
 import './App.css';
-import { useState, useEffect, useRef  } from 'react';
 import Formation from './component/formation';
 import btslogo from './assets/image.png';
 import etnalogo from './assets/ETNA.png';
@@ -13,70 +12,44 @@ import drone from './assets/DRONE.png';
 import DESIGN from './assets/DESIGN.png';
 import ANNEXE from './assets/PROJET-ANEX.png';
 import Footer from './component/footer';
-import Barnav from './component/barnav';
+import Formation2 from './component/formation2';
+import Projects2 from './component/Project2'
+import Skills2 from './component/skills2';
+
 function App() {
-  // const [isHeaderHidden, setIsHeaderHidden] = useState(false);
-  // const formationsRef = useRef(null); // Reference vers la section "Formations"
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (formationsRef.current) {
-  //       const formationsTop = formationsRef.current.getBoundingClientRect().top;
-  //       // Masquer le header lorsque le haut de la section "Formations" atteint le haut de la fenêtre
-  //       if (formationsTop <= 0) {
-  //         setIsHeaderHidden(true);
-  //       } else {
-  //         setIsHeaderHidden(false);
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
   return (
-    <div className="App">
-        <Header />
-        <Hero />
-        <div className="two-column-layout">
-        {/* <div className="main-container"> */}
-          {/* <Barnav /> */}
-          {/* <div className="content"> */}
-         
-        
+    <div id='home' className="App">
+      <Header />
+      <Hero />      
         <div id='formations'>
-        <h1>Formations</h1>
-          <br/>
-          <br/>
-          <Formation img={btslogo} alt="avatar" name="BTS SNIR" date="2022-2024" description="Graduate of a BTS SNIR now called CIEL at the Lycée Louis Armand I was trained in web development with HTML CSS a little C++ and network system administration." link="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux"/>
-          <Formation img={etnalogo} alt="avatar" name="ETNA" date="2024-2026" description="I'm studying for a Bachelor 3 in IS Project Design at Etna and I'm training in IT development." link="https://etna.io/formation/cycle-bachelor3/"/>
+          <Formation2/>
+            <Formation img={btslogo} alt="avatar" name="BTS SNIR" date="2022-2024" description="I am a graduate of the BTS SNIR, now known as CIEL. I was trained in web development using HTML and CSS, as well as C++ and network system administration." link="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux"/>
+            <Formation img={etnalogo} alt="avatar" name="ETNA" date="2024-2026" description="I am currently pursuing a Bachelor's degree in IS Project Design at ETNA, where I am also training in IT development." link="https://etna.io/formation/cycle-bachelor3/"/>
         </div>
-        <br/>
-        <br/>
-        <br/>
+            <br/>
+            <br/>
+            <br/>
         <div id='skills'>
-          <h1>Skills</h1>
-        <Skills/>
+          <Skills2/>
+          <Skills/>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <h1>Projects</h1>
         <div id='Projects'>
-          <Projects projects="LinkyyApp" image={linkyyimg} description="Project to create amobile application to track and manage electricity consumption and customer accounts." repo="https://github.com/KVJJJJ/LINKYY-APP"/>
-          <Projects projects="DRONE" image={drone} description="This project was a website, I had to create it to help me to learn HTML & CSS" repo="https://github.com/KVJJJJ/Drone-WEBSITE"/>
-          <Projects projects="DESIGN" image={DESIGN} description="Here you'll find design projects, commissions and personal projects." repo="https://github.com/KVJJJJ/DESIGN.gitE"/>
-          <Projects projects="ANEX" image={ANNEXE} description="Here are some of the projects we did in the pool of the Etna" repo="https://github.com/KVJJJJ/Projet-Annex"/>
+          <Projects2/>
+          <div className='Card'>
+          <Projects projects="LinkyyApp" image={linkyyimg} description="Project to Develop a Mobile Application for Tracking and Managing Electricity Consumption and Customer Accounts." repo="https://github.com/KVJJJJ/LINKYY-APP"/>
+          <Projects projects="DRONE" image={drone} description="This project was a website that I created to help me learn HTML and CSS." repo="https://github.com/KVJJJJ/Drone-WEBSITE"/>
+          </div>
+          <div className='Card2'>
+          <Projects projects="DESIGN" image={DESIGN} description="Here, you'll find design projects, commissioned works, and personal projects." repo="https://github.com/KVJJJJ/DESIGN"/>
+          <Projects projects="ANEX" image={ANNEXE} description="Here are some of the projects we worked on during the ETNA pool." repo="https://github.com/KVJJJJ/Projet-Annex"/>
+          </div>
         </div>
-        <br/>
+            <br/>
+      <div id='contact'>
         <Footer />
-        </div>
       </div>
-    // </div>
+    </div>
   );
 }
 

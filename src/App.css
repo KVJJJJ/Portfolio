@@ -8,20 +8,17 @@
 }
 
 .App h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: rgb(84, 71, 255);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 50px 0;
-  padding-bottom: 10px;
-  text-align: center;
+  font-size: 2.5rem;  
+  color: #5447ff;  
+  margin-bottom: 15px;  
+  text-align: center;  
+  text-shadow: 5px 5px #1b252e1e;
 }
 
 #Projects {
   align-items: center;
   justify-content: center;
-  display: grid;
+  display: flex;
   left: auto;
   right: auto;
   grid-template-columns: repeat(2, 1fr);
@@ -30,6 +27,7 @@
   grid-row-gap: 0px;
   margin: 0 auto;
   width: fit-content;
+  flex-direction: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -69,5 +67,24 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 40px;
+
+}
+
+.Card2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#skills{
+  padding-top: 70px;
+
 }
 

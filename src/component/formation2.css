@@ -1,0 +1,23 @@
+.formation2 {
+  max-width: 800px;  
+  margin: 0 auto;  
+  padding: 20px;  
+  line-height: 1.6;  
+  font-family: 'Be Vietnam Pro', sans-serif;  
+  color: #333;  
+  margin-bottom: 20px;
+}
+
+.formation2 h1 {
+  font-size: 2.5rem;  
+  color: #5447ff;  
+  margin-bottom: 15px;  
+  text-align: center;  
+  text-shadow: 5px 5px #1b252e1e;
+}
+
+.formation2 p {
+  font-size: 1.2rem;  
+  margin-top: 0;  
+  text-align: center; 
+}

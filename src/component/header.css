@@ -1,27 +1,24 @@
-/* Base styles for the content */
 .main-container {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
 }
 
-/* Content section with padding on the left for the navigation */
 .content {
-  margin-left: 220px; /* Space reserved for the navigation bar */
-  width: calc(100% - 240px); /* Reduces content width to accommodate the nav */
+  margin-left: 220px;
+  width: calc(100% - 240px); 
   padding: 20px;
 }
 
-/* The navigation bar */
 .barnav {
   position: fixed;
-  top: 120px; /* Start after the Hero section, adjust as needed */
+  top: 120px; 
   left: 0;
   width: 200px;
   background-color: #f4f4f4;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  height: calc(100vh - 120px); /* Full height minus space for header */
+  height: calc(100vh - 120px); 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -50,11 +47,11 @@
 }
 
 .barnav a:hover {
-  color: #21198a;
+  color: rgb(103, 98, 177);
 }
 
 .barnav a:active {
-  color: #21198a;
+  color: rgb(103, 98, 177);
 }
 
 /* Sticky header styles */
@@ -83,7 +80,7 @@ header.hidden {
   margin-right: 2vw;
   margin-left: 2vw;
   color: rgb(48, 48, 48);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .nav-links {
@@ -95,14 +92,15 @@ header.hidden {
 .items a {
   color: rgb(48, 48, 48);
   text-decoration: none;
+  transition: transform 0.5s ease;
 }
 
 .items a:hover {
-  color: #21198a;
+  color: rgb(103, 98, 177);
+  transform: scale(1.2);
 }
 
 h2 {
-  
   padding: 0;
 }
 
@@ -111,30 +109,38 @@ h2 {
   align-items: center;
 }
 
-/* Media queries for responsive design */
+.github-link i{
+  font-size: 1.7rem; 
+  color: rgb(48, 48, 48); 
+  margin-right: 3px; 
+  
+  
+}
 
-/* Larger screens */
+
+
+
 @media (max-width: 1200px) {
   .barnav {
-    width: 180px; /* Slightly narrower for medium screens */
+    width: 180px;
     top: 120px;
   }
 
   .content {
     margin-left: 200px;
-    width: calc(100% - 220px); /* Adjust content width */
+    width: calc(100% - 220px); 
   }
 }
 
-/* For tablets and smaller screens */
+
 @media (max-width: 768px) {
   .main-container {
-    flex-direction: column; /* Stack the content vertically */
+    flex-direction: column; 
     padding: 10px;
   }
 
   .barnav {
-    position: static; /* Remove fixed positioning for small screens */
+    position: static;
     width: 100%;
     top: 0;
     height: auto;
@@ -143,24 +149,24 @@ h2 {
   }
 
   .content {
-    margin-left: 0; /* No need to reserve space for the nav */
+    margin-left: 0;
     width: 100%;
     padding: 10px;
   }
 
   .barnav ul {
     display: flex;
-    flex-direction: row; /* Arrange links horizontally */
+    flex-direction: row; 
     justify-content: space-around;
     padding-top: 10px;
   }
 
   .barnav a {
-    font-size: 1rem; /* Smaller font size on mobile */
+    font-size: 1rem; 
   }
 }
 
-/* For very small screens (e.g., mobile phones) */
+
 @media (max-width: 480px) {
   .barnav {
     font-size: 0.9rem;
@@ -168,7 +174,7 @@ h2 {
   }
 
   .barnav a {
-    font-size: 0.9rem; /* Even smaller font size for mobile */
+    font-size: 0.9rem; 
   }
 }
 
