@@ -43,7 +43,8 @@
     display: flex;
     justify-content: center;
     gap: 20px; 
-    align-items: center
+    align-items: center;
+    margin-top: 40px;
 }
 
 
@@ -75,8 +76,10 @@
 }
 
 .dowloadbutton {
-    margin-top: 10vh;
-    margin-bottom: 25vh;
+    margin-top: 0px;
+    margin-bottom: 0vh;
+    justify-content: center;
+    display: flex;
     
 }
 .dowloadbutton a {

@@ -3,6 +3,9 @@ import './skills.css';
 function Skills() {
   return (
     <div className="skills-container">
+        <div className="dowloadbutton2">
+                <a href="/CV_Assim_SENANI.pdf" download="Assim_Senani_CV.pdf">DOWNLOAD CV</a>
+            </div>
         <div className="card_comp">
             <div className="skill-card">
                 <h2>Front-End</h2>
@@ -57,10 +60,6 @@ function Skills() {
                 </div>
             </div>
         </div>
-            <div className="dowloadbutton">
-                <a href="/CV_Assim_SENANI.pdf" download="Assim_Senani_CV.pdf">DOWNLOAD CV</a>
-            </div>
-        
     </div>
   );
 }

@@ -24,7 +24,7 @@ function App() {
       <Hero />      
         <div id='formations'>
           <Formation2/>
-            <Formation img={btslogo} alt="avatar" name="BTS SNIR" date="2022-2024" description="I am a graduate of the BTS SNIR, now known as CIEL. I was trained in web development using HTML and CSS, as well as C++ and network system administration." link="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux"/>
+            <Formation img={btslogo} alt="avatar" name="BTS SNIR" date="2022-2024" description="Graduated of a BTS SNIR, now known as CIEL. I was trained in web development using HTML and CSS, as well as C++ and network system administration." link="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux"/>
             <Formation img={etnalogo} alt="avatar" name="ETNA" date="2024-2026" description="I am currently pursuing a Bachelor's degree in IS Project Design at ETNA, where I am also training in IT development." link="https://etna.io/formation/cycle-bachelor3/"/>
         </div>
             <br/>
