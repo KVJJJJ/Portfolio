@@ -8,7 +8,7 @@ function Skills() {
             </div>
         <div className="card_comp">
             <div className="skill-card">
-                <h2>Front-End</h2>
+                <h2>Web Development</h2>
                 <div className="skill-description">
                     <div className="skill-item">
                         <i className="fab fa-html5"></i> <h3>HTML</h3>
