@@ -37,12 +37,12 @@ function App() {
         <div id='Projects'>
           <Projects2/>
           <div className='Card'>
-          <Projects projects="LinkyyApp" image={linkyyimg} description="Project to Develop a Mobile Application for Tracking and Managing Electricity Consumption and Customer Accounts." repo="https://github.com/KVJJJJ/LINKYY-APP"/>
+          <Projects projects="LinkyApp" image={linkyyimg} description="Project to develop a mobile application for tracking and managing electricity consumption and customer accounts." repo="https://github.com/KVJJJJ/LINKYY-APP"/>
           <Projects projects="DRONE" image={drone} description="This project was a website that I created to help me learn HTML and CSS." repo="https://github.com/KVJJJJ/Drone-WEBSITE"/>
           </div>
           <div className='Card2'>
           <Projects projects="DESIGN" image={DESIGN} description="Here, you'll find design projects, commissioned works, and personal projects." repo="https://github.com/KVJJJJ/DESIGN"/>
-          <Projects projects="ANEX" image={ANNEXE} description="Here are some of the projects we worked on during the ETNA pool." repo="https://github.com/KVJJJJ/Projet-Annex"/>
+          <Projects projects="ANNEX" image={ANNEXE} description="Here are some of the projects we worked on during the ETNA pool." repo="https://github.com/KVJJJJ/Projet-Annex"/>
           </div>
         </div>
             <br/>

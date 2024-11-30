@@ -80,7 +80,7 @@ header.hidden {
   margin-right: 2vw;
   margin-left: 2vw;
   color: rgb(48, 48, 48);
-  font-size: 13px;
+  font-size: 13.2px;
 }
 
 .nav-links {
@@ -97,7 +97,7 @@ header.hidden {
 
 .items a:hover {
   color: rgb(103, 98, 177);
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 h2 {

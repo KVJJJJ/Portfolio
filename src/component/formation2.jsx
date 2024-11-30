@@ -7,7 +7,7 @@ const Formation2 = () => {
       <h1>Formations</h1>
       <p>I'm graduated of BTS SNIR, which provide me 
          a strong knowledge in mastering HTML, CSS, and JavaScript.
-          In addition I have been followed training in MySQL database administration. 
+          In addition I have been following training in MySQL database administration. 
           Moreover, I am further enhancing my skills through self-learning,
           particularly with React.js for web development.
       </p>  
